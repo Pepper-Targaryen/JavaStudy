@@ -1,7 +1,15 @@
 package tp04;
 
 public class DBox extends Box {
-	public DBox(int a, int b) {
-		super(a, b);
+	public DBox(Maze M, int a, int b) {
+		super(M, a, b);
+	}
+
+	public boolean canGo() {
+		return true;
+	}
+
+	public String getLabel() {
+		return "D";
 	}
 }
