@@ -1,4 +1,5 @@
-package tp04;
+package maze;
+
 
 public class WBox extends Box {
 	public WBox(Maze M, int a, int b) {

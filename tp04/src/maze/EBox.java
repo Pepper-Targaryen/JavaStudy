@@ -1,7 +1,8 @@
-package tp04;
+package maze;
 
-public class DBox extends Box {
-	public DBox(Maze M, int a, int b) {
+
+public class EBox extends Box {
+	public EBox(Maze M, int a, int b) {
 		super(M, a, b);
 	}
 
@@ -10,6 +11,6 @@ public class DBox extends Box {
 	}
 
 	public String getLabel() {
-		return "D";
+		return "E";
 	}
 }

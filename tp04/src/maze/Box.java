@@ -1,4 +1,6 @@
-package tp04;
+package maze;
+
+import dijkstra.VertexInterface;
 
 public abstract class Box implements VertexInterface{
 	private int x;

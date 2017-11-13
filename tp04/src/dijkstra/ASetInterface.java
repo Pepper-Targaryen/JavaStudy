@@ -1,4 +1,5 @@
-package tp04;
+package dijkstra;
+
 
 public interface ASetInterface {
 
@@ -6,5 +7,5 @@ public interface ASetInterface {
 	public void add(VertexInterface vertex);
 
 	/** if contain point vertex */
-	public int contains(VertexInterface vertex);
+	public boolean contains(VertexInterface vertex);
 }

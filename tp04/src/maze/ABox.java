@@ -1,4 +1,5 @@
-package tp04;
+package maze;
+
 
 public class ABox extends Box {
 	public ABox(Maze M, int a, int b) {

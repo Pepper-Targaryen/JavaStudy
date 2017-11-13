@@ -1,4 +1,4 @@
-package tp04;
+package maze;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,8 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import tp04.MazeReadingException;
-//import java.util.ArrayList;
+import dijkstra.GraphInterface;
 
 public class Maze implements GraphInterface {
 	private int length;

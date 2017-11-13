@@ -1,4 +1,5 @@
-package tp04;
+package dijkstra;
+
 
 public interface PiInterface {
 
@@ -6,6 +7,6 @@ public interface PiInterface {
 	public void setValue(VertexInterface i, int minDistance);
 	
 	/** get the min distance between root and point i */
-	public void getValue(VertexInterface i);
+	public int getValue(VertexInterface i);
 
 }

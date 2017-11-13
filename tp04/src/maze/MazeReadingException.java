@@ -1,4 +1,4 @@
-package tp04;
+package maze;
 
 public class MazeReadingException extends Exception {
 	private final String fileName;
