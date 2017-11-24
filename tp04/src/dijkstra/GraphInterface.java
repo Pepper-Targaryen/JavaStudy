@@ -1,13 +1,14 @@
 package dijkstra;
 
+import java.util.ArrayList;
+
 public interface GraphInterface {
-
-	/** the distance between two points *//*
-	public int distance(VertexInterface A, VertexInterface B);
-
-	*//** the number of points *//*
-	public int length();
-
-	*//** the set of points that point i can have access to *//*
-	public VertexInterface[] descendants(VertexInterface i);*/
+	
+	public ArrayList<VertexInterface> getAllVertices();
+	
+	public ArrayList<VertexInterface> getSuccessors(VertexInterface vertex);
+	
+	/** the distance between two points */
+	public int getWeight(VertexInterface src, VertexInterface dst);
+	
 }
