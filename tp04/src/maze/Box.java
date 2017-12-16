@@ -15,4 +15,8 @@ public abstract class Box implements VertexInterface{
 	public abstract String getLabel();
 	
 	public abstract boolean canGo();
+	
+	public String getCoordonnate() {
+		return "x = "+x+", y = "+y;
+	}
 }

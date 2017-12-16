@@ -21,6 +21,6 @@ public class DrawingPanel extends JPanel {
 		super.paintComponent(g);
 
 		// Ask the model to draw the segments
-		drawingApp.getDrawingAppModel().paintSegments(g);
+		//drawingApp.getDrawingAppModel().paintSegments(g);
 	}
 }

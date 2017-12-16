@@ -7,8 +7,7 @@ public class Previous implements PreviousInterface {
 	private Hashtable<VertexInterface, VertexInterface> previousPoints;
 
 	public Previous(int numberOfVertex) {
-		previousPoints = new Hashtable<VertexInterface, VertexInterface>(
-				numberOfVertex);
+		previousPoints = new Hashtable<VertexInterface, VertexInterface>(numberOfVertex);
 	}
 
 	public void setValue(VertexInterface vertex, VertexInterface value) {
