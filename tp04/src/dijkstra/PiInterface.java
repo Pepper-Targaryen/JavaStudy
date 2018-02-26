@@ -1,13 +1,12 @@
 package dijkstra;
 
-import java.util.ArrayList;
-
+/**This interface describes the pi function in Dijkstra's algorithm.*/
 public interface PiInterface {
 
-	/** change the min distance between root and point i */
+	/** Change the shortest distance between root and vertex i. */
 	public void setValue(VertexInterface i, int minDistance);
 	
-	/** get the min distance between root and point i */
+	/** Get the shortest distance between root and vertex i. */
 	public int getValue(VertexInterface i);
 
 	

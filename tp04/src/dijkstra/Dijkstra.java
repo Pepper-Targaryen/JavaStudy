@@ -1,7 +1,20 @@
 package dijkstra;
 
-public class Dijkstra {
 
+public class Dijkstra {
+	
+	/**A value high enough which can be compared to another one*/
+	private static final int infinite=1000;
+	
+	/**
+	 * Dijkstra algorithm implementation
+	 * @param g         graph
+	 * @param r         root
+	 * @param a         A set (examined vertices)
+	 * @param pi        PI function (return the shortest distance from the root)
+	 * @param previous  function which return previous vertex
+	 * @return previous
+	 */
 	private static PreviousInterface dijkstra(GraphInterface g, VertexInterface r, ASetInterface a, PiInterface pi,
 			PreviousInterface previous) {
 		a.add(r);
@@ -9,9 +22,9 @@ public class Dijkstra {
 		pi.setValue(r, 0);
 
 		for (VertexInterface t : g.getAllVertices()) {
-			// infinity = 1000
 			if (t != r)
-				pi.setValue(t, 1000);
+				//Those values can be subsequently used in comparisons.
+				pi.setValue(t, infinite); 
 		}
 		int n = g.getAllVertices().size();
 		for (int j = 1; j < n; j++) {
@@ -29,7 +42,7 @@ public class Dijkstra {
 				}
 			}
 
-			// Initialisation of the value
+			// Initialization of the value
 			for (VertexInterface t : g.getAllVertices()) {
 
 				if (t.canGo() && !a.contains(t)) {
@@ -50,7 +63,14 @@ public class Dijkstra {
 		}
 		return previous;
 	}
+	
 
+	/**
+	 * Dijkstra algorithm launcher
+	 * @param g  graph
+	 * @param r  root
+	 * @return previous function
+	 */
 	public static PreviousInterface dijkstra(GraphInterface g, VertexInterface r) {
 		ASet a = new ASet();
 		Pi pi = new Pi(g.getAllVertices().size());
